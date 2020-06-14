@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录 - 支付宝</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="icon" href="../images/icon.png" type="../image/x-icon">
+</head>
+<body onload="backgroundImg()">
+	<!-- 头部 -->
+	<div id="head">
+		<div class="headContent">
+			<a href=""  class="textColorChange">支付宝APP</a>
+			<div>
+				<a href="../index.html"  class="textColorChange">支付宝首页</a>&nbsp | &nbsp
+				<a href=""  class="textColorChange">服务大厅</a>&nbsp | &nbsp
+				<a href=""  class="textColorChange">提建议</a>
+			</div>
+		</div>
+	</div>
+	<!-- 主体 -->
+	<div class="frame">
+		<div id="mainContent">
+			<div class="image-a"><img src="../images/alipay.png"></div>
+			<div id="operate">
+				<!-- 选择 -->
+				<div id="selectionBox">
+					<ul>
+						<li id="sweepCode"><a href="javascript:void(0)" onclick="changeToScan()" onmouseover="aOnMouseOver(this)" onmouseout="aOnMouseOut(this,'s-login')">扫码登陆</a></li>
+						<li id="account"><a href="javascript:void(0)" onclick="changeToAccount()" onmouseover="aOnMouseOver(this)" onmouseout="aOnMouseOut(this,'a-login')">账号登陆</a></li>
+					</ul>
+				</div>
+				<!-- 扫码登录 -->
+				<div id="s-login" >		
+						<img src="../images/mask.png" id="scanMaskImg" class="login-img">				
+						<img src="../images/useHelp.png" id="useHelpImg" class="login-img">
+					<div class="v-space2"></div>
+					<div class="centeredText">请使用手机支付宝支付</div>
+					<div class="centeredText"><a href="" id="useHelp" onmouseover="mouseOverChangeImg()" onmouseout="mouseOutChangeImg()">使用帮助 </a>&nbsp | &nbsp<a href=""> 下载手机支付宝</a>
+					</div>
+					<div class="v-space"></div>
+				</div>
+				<!-- 账号登陆 -->
+				<div id="a-login">
+					<div id="error">
+						<span>请输入账户名</span>
+					</div>
+					<form id="login-input" action="../index.html" onsubmit="return testLoginForm();" method="get">	
+						<div class="loginInputTextFrame">
+							<i class="iIndex" id="iPeople" onmouseover="iOver('iPeople')" onmouseout="iOut('iPeople')"></i><input class="login-input-text" type="text" placeholder=" 邮箱/手机号/淘宝会员名" maxlength="30" id="laccount">
+						</div>
+						<div class="loginInputTextFrame">
+							<i class="iIndex" id="iLock" onmouseover="iOver('iLock')" onmouseout="iOut('iLock')"></i><input class="login-input-text" type="password" placeholder=" 密码" maxlength="16" id="password">
+						</div>	
+						<div class="flex-left"><a href="" class="textColorChange">忘记登陆密码？</a></div>
+						<div class="loginInputTextFrame" id="testCodeFrame">
+							<i class="iIndex" id="iTest" onmouseover="iOver('iTest')" onmouseout="iOut('iTest')"></i><input class="login-input-text" type="text" placeholder=" 验证码" maxlength="4" id="testCode"><img src="../images/imgcode1.png" id="imgCode" onclick="changeCode()">
+						</div>	
+						<input type="submit" value="完成" class="sign-button"> 	
+					</form>	
+					<div class="flex-between" >
+						<a href=""  class="textColorChange">淘宝会员登陆</a>
+						<a href="reg.html"  class="textColorChange">免费注册</a>
+					</div>	
+					<div class="v-space"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- 尾部 -->
+	<div id="foot">
+		<div class="flex-center">
+			<a href=""  class="footText">关于支付宝</a>&nbsp | &nbsp
+			<a href=""  class="footText">诚征英才</a>&nbsp | &nbsp
+			<a href=""  class="footText">联系我们</a>&nbsp | &nbsp
+			<a href=""  class="footText">International Business</a>&nbsp | &nbsp
+			<a href=""  class="footText">About Alipay</a>
+		</div>
+		<div class="flex-center">
+			<a href=""  class="footText">ICP证：沪B2-20150087</a>
+		</div>
+	</div>
+<script type="text/javascript" src="../js/common.js" async></script>
+<script type="text/javascript" src="../js/login.js" async></script>
+</body>
+</html>

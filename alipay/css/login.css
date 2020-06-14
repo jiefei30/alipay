@@ -1,0 +1,259 @@
+*{
+	box-sizing: border-box;   
+	margin: 0;
+	font-family: "Microsoft JhengHei";
+}
+body{
+	/*background-image: url(../images/login_bg1.jpg);*/
+	background-size: cover;
+	background-attachment: fixed; 
+	overflow: hidden;
+}
+.frame{
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+#head{
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
+.headContent{
+	line-height: 28px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+#mainContent{
+	margin-top: 50px;
+	width: 100%;
+	min-width: 1000px;
+	height:100%;
+	min-height: 600px;
+	/*border: 2px solid #fff;*/
+}
+#operate{
+	background-color: rgba(30,38,44,.6);
+	/*border: 2px solid #fff;*/
+	/*width: 305px;*/
+	min-width: 300px;
+	height: 100%;
+	margin:50px 100px 100px 0 ;
+	float:right;
+	overflow: hidden;
+}
+#selectionBox {
+	width: 100%;
+	height: 50px;
+}
+#selectionBox ul{
+	display: block;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#selectionBox ul li{
+	float: left;
+}
+#selectionBox ul a{
+	padding: 20px 40px 5px 40px;
+	display: block;
+	font-size: 18px;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+/*#selectionBox ul a:hover{
+	border-bottom: 2px solid #0AE;
+	color: #0AE;
+	transition-delay: 100ms;
+	transition-duration: 500ms;
+}*/
+#sweepCode a{
+	border-bottom: 2px solid #0AE;
+	color:#0AE;
+}
+#account a{
+	border-bottom: 2px solid #fff;
+	color:#fff;
+}
+.login-img{
+	display: block;
+	position: absolute;
+	margin-left: 65px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	opacity: 1;
+	transition: opacity 0.3s ease-out;
+}
+#scanMaskImg{
+	z-index: 2;
+}
+#useHelpImg{
+	z-index: 1;
+}
+.v-space2{
+	height: 220px;
+}
+.centeredText{
+	text-align: center;
+	color: #fff;
+}
+.centeredText a{
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+.centeredText a:hover{
+	color: #0AE;
+	transition-delay: 100ms;
+	transition-duration: 500ms;
+}
+.v-space{
+	height: 15px;
+}
+/*#a-login{
+	margin: 0 auto;
+	padding-top:20px; 
+}
+#login-input{
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	align-items: center;
+}*/
+#login-input{
+	margin-top: 10px;
+}
+.loginInputTextFrame{
+	padding-left: 15%;
+	width: 300px;
+	height: 100%;
+	overflow: hidden;
+}
+.login-input-text{
+	/*display: block;*/
+	padding-left: 5px;
+	margin: 15px auto;
+	font-size: 15px;
+	/*border-radius: 12px ;*/
+	border: none;
+	height: 40px;
+	width: 68%;
+	outline: none;
+}
+#testCode{
+	width: 30%;
+}
+#testCodeFrame{
+	display: none;
+}
+#imgCode{
+	height: 40px;
+	width: 84px;
+	position: relative;
+	top: 14px;
+	margin-left: 10px;
+}
+.flex-left{
+	margin-right: 12%;
+	display: flex;
+	justify-content: flex-end;
+}
+.textColorChange {
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+.textColorChange:hover{
+	color: #0AE;
+	transition-delay: 100ms;
+	transition-duration: 500ms;
+}
+.sign-button{
+	display: block;
+	width: 80%;
+	margin: 15px auto;
+	height: 40px;
+	border:1px solid  #0AE;
+	border-radius: 10px;
+	background-color: #0AE;
+	transition: all 0.3s ease-out;
+	outline: none;
+	color: white;
+}
+.sign-button:hover{
+	background-color: #4169E1;
+	transition-delay: 100ms;
+	transition-duration: 500ms;
+}
+.flex-between{
+	margin-left: 12%;
+	margin-right: 12%;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+#foot{
+	/*display: flex;
+	justify-content: center;*/
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	line-height: 28px;
+	overflow: hidden;
+	width: 100%;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+}
+.footText{
+	display: block;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+.iIndex{
+	display: inline-block;
+	width: 41px;
+	height: 41px;
+	background-size: 41px 41px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 15px;
+}
+#iPeople{
+	background-image: url(../images/iPeople.png);
+}
+
+#iLock{
+	background-image: url(../images/iLock.jpg);
+	
+}
+#iTest{
+	background-image: url(../images/iTest.jpg);
+	
+}
+#error{
+	display: none;
+	margin: 5% 15% 0 15%;
+	height: 25px;
+	background-color: #FDEEE9;
+	padding-left: 10px;
+	line-height: 25px;
+	vertical-align: center;
+	font-size: 13px;
+}
+#s-login{
+	display: block;
+}
+#a-login{
+	display: none;
+}
